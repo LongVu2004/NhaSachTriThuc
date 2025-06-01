@@ -1,0 +1,17 @@
+﻿@model IEnumerable<NhaSachTriThuc.Models.Category>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-grid"></i> Danh mục
+    </a>
+    <ul class="dropdown-menu">
+        @foreach (var category in Model)
+        {
+            <li>
+                <a class="dropdown-item" href="@Url.Action("Category", "Product", new { categoryId = category.CategoryId })">
+                    @category.Name
+                </a>
+            </li>
+        }
+    </ul>
+</li>

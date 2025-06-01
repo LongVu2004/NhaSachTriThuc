@@ -1,0 +1,139 @@
+﻿@model List<NhaSachTriThuc.Models.CartItem>
+
+<div class="cart-container">
+    <h2 class="text-primary mb-4">Giỏ hàng của bạn</h2>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="empty-cart text-center p-4 bg-light rounded">
+            <p class="text-muted mb-3">Giỏ hàng của bạn đang trống.</p>
+            <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Tiếp tục mua sắm</a>
+        </div>
+    }
+    else
+    {
+        <table class="table cart-table">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col" class="text-center">Sách</th>
+                    <th scope="col" class="text-center">Giá</th>
+                    <th scope="col" class="text-center">Số lượng</th>
+                    <th scope="col" class="text-center">Thành tiền</th>
+                    <th scope="col" class="text-center">Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="cart-item">
+                        <td class="align-middle">@item.Title</td>
+                        <td class="align-middle text-end">@item.Price.ToString("n0") đ</td>
+                        <td class="align-middle text-center">
+                            <div class="d-flex justify-content-center gap-2">
+                                <form asp-action="DecreaseQuantity" asp-controller="Cart" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@item.BookId" />
+                                    <button type="submit" class="btn btn-sm btn-outline-secondary action-btn"
+                                            aria-label="Giảm số lượng cho @item.Title"
+                                    @(item.Quantity <= 1 ? "disabled" : "")>
+                                        <i class="bi bi-dash-lg"></i>
+                                    </button>
+                                </form>
+                                <span class="quantity-display">@item.Quantity</span>
+                                <form asp-action="IncreaseQuantity" asp-controller="Cart" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@item.BookId" />
+                                    <button type="submit" class="btn btn-sm btn-outline-secondary action-btn"
+                                            aria-label="Tăng số lượng cho @item.Title">
+                                        <i class="bi bi-plus-lg"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </td>
+                        <td class="align-middle text-end">@((item.Price * item.Quantity).ToString("n0")) đ</td>
+                        <td class="align-middle text-center">
+                            <form asp-action="Remove" asp-controller="Cart" method="post" style="display:inline;"
+                                  onsubmit="return confirm('Bạn có chắc muốn xóa @item.Title khỏi giỏ hàng?');">
+                                <input type="hidden" name="id" value="@item.BookId" />
+                                <button type="submit" class="btn btn-sm btn-danger action-btn"
+                                        aria-label="Xóa @item.Title khỏi giỏ hàng">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="cart-footer d-flex justify-content-end align-items-center mt-4 p-3 bg-light rounded">
+            <h4 class="total-box mb-0 me-3 text-danger">Tổng cộng: @ViewBag.Total.ToString("n0") đ</h4>
+            <a href="@Url.Action("Checkout", "Cart")" class="btn btn-success">Thanh toán</a>
+        </div>
+    }
+</div>
+
+<style>
+    .cart-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .cart-table {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .table-light {
+        background: #e9ecef;
+        color: #343a40;
+    }
+
+    .cart-item:hover {
+        background: #f1f3f5;
+    }
+
+    .text-end {
+        text-align: right;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .action-btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.9rem;
+        transition: transform 0.2s ease;
+    }
+
+        .action-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .action-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+    .total-box {
+        border-radius: 4px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+    }
+
+    .cart-footer .btn-success {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+        background: #28a745;
+        border: none;
+        transition: background 0.3s ease;
+    }
+
+        .cart-footer .btn-success:hover {
+            background: #218838;
+        }
+
+</style>

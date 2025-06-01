@@ -1,0 +1,27 @@
+﻿@* @page
+@model AccessDeniedModel
+@{
+    ViewData["Title"] = "Access denied";
+}
+
+<header>
+    <h1 class="text-danger ">@ViewData["Title"]</h1>
+    <p class="text-danger">You do not have access to this resource.</p>
+</header>
+ *@
+
+@page
+@model AccessDeniedModel
+@{
+    ViewData["Title"] = "Access Denied 404";
+}
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card modern-card text-center p-5" aria-labelledby="access-denied-title">
+        <div class="card-body">
+            <h1 class="card-title text-danger fw-bold mb-3" id="access-denied-title">@ViewData["Title"]</h1>
+            <p class="card-text text-muted mb-4">You do not have access to this resource.</p>
+            <a href="/" class="btn btn-primary btn-lg btn-return-home">Back to Home</a>
+        </div>
+    </div>
+</div>

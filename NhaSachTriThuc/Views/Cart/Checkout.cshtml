@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Thanh toán đơn hàng";
+}
+
+<h2>Thông tin thanh toán</h2>
+
+<form asp-action="Checkout" method="post">
+    <div class="mb-3">
+        <label>Họ tên</label>
+        <input type="text" name="customerName" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Số điện thoại</label>
+        <input type="text" name="customerPhone" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Địa chỉ giao hàng</label>
+        <textarea name="customerAddress" class="form-control" required></textarea>
+    </div>
+    <div class="mb-3">
+        <strong>Tổng tiền: @ViewBag.Total.ToString("n0") đ</strong>
+    </div>
+    <button type="submit" class="btn btn-success">Xác nhận đặt hàng</button>
+</form>

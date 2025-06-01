@@ -1,0 +1,17 @@
+﻿@model Book
+
+<h3>🗑️ Xóa sách</h3>
+
+<p>Bạn có chắc chắn muốn xóa sách sau?</p>
+
+<ul class="list-group mb-3">
+    <li class="list-group-item"><strong>Tiêu đề:</strong> @Model.Title</li>
+    <li class="list-group-item"><strong>Tác giả:</strong> @Model.Author</li>
+    <li class="list-group-item"><strong>Giá:</strong> @Model.Price.ToString("N0") VNĐ</li>
+</ul>
+
+<form asp-controller="Admin" asp-action="DeleteBookConfirmed" method="post">
+    <input type="hidden" name="BookId" value="@Model.BookId" />
+    <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+    <a href="/Admin/Products" class="btn btn-secondary">Hủy</a>
+</form>

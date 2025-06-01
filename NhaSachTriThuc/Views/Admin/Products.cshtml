@@ -1,0 +1,60 @@
+﻿@* @model IEnumerable<Book>
+
+<h3>📘 Danh sách sách</h3>
+<a asp-controller="Admin" asp-action="AddBook" class="btn btn-success mb-2">➕ Thêm sách mới</a> 
+
+<table class="table overflow-auto">
+    <thead>
+        <tr>
+            <th>Ảnh bìa</th>
+            <th>Tên sách</th>
+            <th>Giá</th>
+            <th>Tác giả</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td><img src="@("/images/" + book.ImageUrl + ".jpg")" width="100" /></td>
+                <td>@book.Title</td>
+                <td>@book.Price.ToString("N0") đ</td>
+                <td>@book.Author</td>
+                <td>
+                    <a href="/Admin/EditBook/@book.BookId" class="btn btn-warning btn-sm">Sửa</a>
+                    <a href="/Admin/DeleteBook/@book.BookId" class="btn btn-danger btn-sm">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+ *@
+
+@model IEnumerable<Book>
+
+<div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="display-6 fw-bold text-dark">📘 Danh sách sách</h3>
+        <a asp-controller="Admin" asp-action="AddBook" class="btn btn-primary btn-add-book">➕ Thêm sách mới</a>
+    </div>
+    <div class="row g-4">
+        @foreach (var book in Model)
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card modern-card h-100" aria-labelledby="book-title-@book.BookId">
+                    <img src="@("/images/" + book.ImageUrl + ".jpg")" class="card-img-top book-image" alt="Bìa sách @book.Title" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold text-dark mb-2" id="book-title-@book.BookId">@book.Title</h5>
+                        <p class="card-text text-muted mb-1"><strong>Tác giả:</strong> @book.Author</p>
+                        <p class="card-text text-muted mb-3"><strong>Giá:</strong> @book.Price.ToString("N0") đ</p>
+                        <div class="mt-auto d-flex gap-2">
+                            <a href="/Admin/EditBook/@book.BookId" class="btn btn-outline-warning btn-sm flex-grow-1">Sửa</a>
+                            <a href="/Admin/DeleteBook/@book.BookId" class="btn btn-outline-danger btn-sm flex-grow-1">Xóa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

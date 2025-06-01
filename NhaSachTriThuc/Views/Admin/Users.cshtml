@@ -1,0 +1,63 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model List<(IdentityUser user, IList<string> roles)>
+@{
+    ViewData["Title"] = "Quản lý người dùng";
+    var availableRoles = (List<string>)ViewBag.Roles;
+}
+
+<h2>👤 Quản lý người dùng</h2>
+
+<h4>➕ Tạo người dùng mới</h4>
+<form asp-action="CreateUser" method="post" class="mb-4">
+    <div class="row">
+        <div class="col-md-3">
+            <input type="email" name="email" class="form-control" placeholder="Email" required />
+        </div>
+        <div class="col-md-3">
+            <input type="password" name="password" class="form-control" placeholder="Mật khẩu" required />
+        </div>
+        <div class="col-md-3">
+            <select name="role" class="form-control">
+                @foreach (var role in availableRoles)
+                {
+                    <option value="@role">@role</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-success">Tạo tài khoản</button>
+        </div>
+    </div>
+</form>
+
+<h4 class="mt-5">📋 Danh sách người dùng</h4>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Vai trò hiện tại</th>
+            <th>Thay đổi vai trò</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.user.Email</td>
+                <td>@string.Join(", ", item.roles)</td>
+                <td>
+                    <form asp-action="ChangeRole" method="post" class="d-flex">
+                        <input type="hidden" name="userId" value="@item.user.Id" />
+                        <select name="newRole" class="form-control me-2">
+                            @foreach (var role in availableRoles)
+                            {
+                                <option value="@role" selected="@(item.roles.Contains(role) ? "selected" : null)">@role</option>
+                            }
+                        </select>
+                        <button type="submit" class="btn btn-primary">Cập nhật</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,40 @@
+﻿@model Order
+@using NhaSachTriThuc.Models
+
+<h3>🧾 Chi tiết đơn hàng #@Model.OrderId</h3>
+<p>Ngày đặt: @Model.OrderDate.ToString("dd/MM/yyyy")</p>
+<p>Trạng thái hiện tại: <strong>@Model.Status</strong></p>
+
+<form asp-action="UpdateOrderStatus" method="post">
+    <input type="hidden" name="orderId" value="@Model.OrderId" />
+    <select name="status" class="form-select mb-2">
+        @foreach (var status in (List<OrderStatus>)ViewBag.StatusList)
+        {
+            <option value="@status" selected="@(status == Model.Status)">
+                @status
+            </option>
+        }
+    </select>
+    <button class="btn btn-success">Cập nhật trạng thái</button>
+</form>
+
+<h4 class="mt-4">Sản phẩm</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Sách</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderDetails)
+        {
+            <tr>
+                <td>@item.Book.Title</td>
+                <td>@item.Book.Price.ToString("N0")</td>
+                <td>@item.Quantity</td>
+            </tr>
+        }
+    </tbody>
+</table>

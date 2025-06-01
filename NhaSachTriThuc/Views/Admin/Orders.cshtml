@@ -1,0 +1,52 @@
+﻿@* @model List<Order>
+
+<h2>📦 Danh sách đơn hàng</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mã đơn</th>
+            <th>Ngày đặt</th>
+            <th>Trạng thái</th>
+            <th>Chi tiết</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderId</td>
+                <td>@order.OrderDate.ToString("dd/MM/yyyy")</td>
+                <td>@order.Status</td>
+                <td>
+                    <a href="/Admin/OrderDetails/@order.OrderId" class="btn btn-sm btn-primary">Chi tiết</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+ *@
+
+ @model List<Order>
+
+<div class="container py-5">
+    <h2 class="display-6 fw-bold text-dark mb-4">📦 Danh sách đơn hàng</h2>
+    <div class="row g-4">
+        @foreach (var order in Model)
+        {
+            <div class="col-lg-4 col-md-6">
+                <div class="card modern-card h-100" aria-labelledby="order-id-@order.OrderId">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-dark" id="order-id-@order.OrderId">Mã đơn: @order.OrderId</h5>
+                        <p class="card-text text-muted mb-1"><strong>Ngày đặt:</strong> @order.OrderDate.ToString("dd/MM/yyyy")</p>
+                        <p class="card-text text-muted mb-1"><strong>Trạng thái:</strong> @order.Status</p>
+                        <p class="card-text text-muted mb-1"><strong>Khách hàng:</strong> @(order.CustomerName ?? "N/A")</p>
+                        <p class="card-text text-muted mb-3"><strong>Địa chỉ:</strong> @(order.CustomerAddress ?? "N/A")</p>
+                        <p class="card-text text-muted mb-3"><strong>Số điện thoại:</strong> @(order.CustomerPhone ?? "N/A")</p>
+                        <a href="/Admin/OrderDetails/@order.OrderId" class="btn btn-primary btn-sm btn-details">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

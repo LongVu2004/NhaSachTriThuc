@@ -1,0 +1,77 @@
+﻿@model List<NhaSachTriThuc.Models.Book>
+@{
+    ViewData["Title"] = "Danh mục sách";
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // AJAX thêm vào giỏ
+            $('.btn-add-to-cart').click(function (e) {
+                e.preventDefault();
+                const bookId = $(this).data('bookid');
+
+                $.post('/Cart/AddToCart', { bookId: bookId }, function (result) {
+                    alert('Đã thêm vào giỏ hàng!');
+                    // Có thể update icon giỏ ở đây nếu cần
+                });
+            });
+
+            // AJAX mở chi tiết sách
+            $('.btn-view-details').click(function (e) {
+                e.preventDefault();
+                const bookId = $(this).data('bookid');
+
+                $.get('/Product/_DetailsPartial/' + bookId, function (data) {
+                    $('#modal-body').html(data);
+                    $('#bookModal').modal('show');
+                });
+            });
+        });
+    </script>
+}
+
+<h2 class="mt-4 mb-3">
+    <span class="text-black fw-semibold">Danh sách sách theo thể loại: @ViewData["Name"]</span>
+</h2>
+
+@if (Model != null && Model.Any())
+{
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        @foreach (var book in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="@("/images/" + book.ImageUrl + ".jpg")" class="card-img-top" style="height: 250px; object-fit: cover;" alt="@book.Title" />
+                    <div class="card-body">
+                        <h5 class="card-title">@book.Title</h5>
+                        <p class="card-text text-muted">Tác giả: @book.Author</p>
+                        <p class="card-text text-danger fw-bold">@book.Price.ToString("n0") ₫</p>
+
+                        <button class="btn btn-sm btn-outline-primary btn-view-details" data-bookid="@book.BookId">Chi tiết</button>
+                        <button class="btn btn-sm btn-success btn-add-to-cart" data-bookid="@book.BookId">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">Không tìm thấy sách nào trong danh mục này.</div>
+}
+
+<!-- Modal xem chi tiết sách -->
+<div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header" asp-action="Details">
+                <h5 class="modal-title">Chi tiết sách</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Nội dung sẽ được load ở đây qua AJAX -->
+            </div>
+        </div>
+    </div>
+</div>

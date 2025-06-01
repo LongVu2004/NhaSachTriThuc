@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "NhaSachTriThuc.Controllers.CategoryApiController",
+    "Method": "GetCategories",
+    "RelativePath": "api/CategoryApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

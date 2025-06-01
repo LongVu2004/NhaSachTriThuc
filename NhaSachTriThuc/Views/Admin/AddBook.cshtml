@@ -1,0 +1,37 @@
+﻿@model Book
+
+<h3>➕ Thêm sách mới</h3>
+
+<form asp-controller="Admin" asp-action="AddBook" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label>Tiêu đề</label>
+        <input class="form-control" name="Title" required />
+    </div>
+    <div class="mb-3">
+        <label>Tác giả</label>
+        <input class="form-control" name="Author" required />
+    </div>
+    <div class="mb-3">
+        <label>Giá bán</label>
+        <input class="form-control" name="Price" type="number" required />
+    </div>
+    <div class="mb-3">
+        <label>Mô tả</label>
+        <textarea class="form-control" name="Description"></textarea>
+    </div>
+    <div class="mb-3">
+        <label>Chọn ảnh bìa</label>
+        <input class="form-control" type="file" name="ImageFile" accept="image/*"/>
+    </div>
+    <div class="mb-3">
+        <label>Danh mục</label>
+        <select name="CategoryId" class="form-control">
+            @foreach (var cat in (List<Category>)ViewBag.Categories)
+            {
+                <option value="@cat.CategoryId">@cat.Name</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success">Thêm sách</button>
+    <a href="@Url.Action("Index", "Admin")" class="btn btn-primary mt-3">Quay về trang chủ</a>
+</form>

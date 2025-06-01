@@ -1,0 +1,235 @@
+﻿@model NhaSachTriThuc.Models.Book
+
+<style>
+    /* Custom styles for book details */
+    .book-details-container {
+        background: #fff;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .book-image {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+        .book-image:hover {
+            transform: scale(1.02);
+        }
+
+    .book-title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    .book-author, .book-category, .book-stock, .book-comments {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 0.75rem;
+    }
+
+        .book-stock.out-of-stock {
+            color: #dc3545;
+        }
+
+    .book-description {
+        font-size: 1rem;
+        color: #666;
+        max-height: 150px;
+        overflow-y: auto;
+        margin-bottom: 1.5rem;
+    }
+
+        .book-description::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .book-description::-webkit-scrollbar-thumb {
+            background: #adb5bd;
+            border-radius: 3px;
+        }
+
+    .book-price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #dc3545;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-primary:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+    /* Notification styles */
+    .notification {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75rem 1rem;
+        margin-bottom: 1rem;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        position: relative;
+        animation: slideIn 0.3s ease-in-out;
+    }
+
+        .notification.success {
+            background-color: #e6f4ea;
+            color: #28a745;
+            border: 1px solid #28a745;
+        }
+
+        .notification.error {
+            background-color: #f8d7da;
+            color: #dc3545;
+            border: 1px solid #dc3545;
+        }
+
+        .notification .close-btn {
+            background: none;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            color: inherit;
+            padding: 0 0.5rem;
+        }
+
+            .notification .close-btn:hover {
+                opacity: 0.7;
+            }
+
+
+    opacity: 0;
+    transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+
+
+    padding: 1rem;
+    }
+
+    .book-image {
+        height: 200px;
+        margin-bottom: 1rem;
+    }
+
+    .book-title {
+        font-size: 1.5rem;
+    }
+
+    .book-author, .book-category, .book-stock, .book-comments {
+        font-size: 1rem;
+    }
+
+    .book-description {
+        font-size: 0.9rem;
+        max-height: 120px;
+    }
+
+    .book-price {
+        font-size: 1.25rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .notification {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    }
+
+
+    opacity: 0;
+    transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+</style>
+
+<div class="container my-4">
+    <!-- Notification banner -->
+    @if (TempData["Message"] != null)
+    {
+        <div class="notification success" role="alert" aria-live="assertive">
+            <span>@TempData["Message"]</span>
+            <button type="button" class="close-btn" onclick="this.parentElement.style.display='none'" aria-label="Close notification">
+                ×
+            </button>
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="notification error" role="alert" aria-live="assertive">
+            <span>@TempData["Error"]</span>
+            <button type="button" class="close-btn" onclick="this.parentElement.style.display='none'" aria-label="Close notification">
+                ×
+            </button>
+        </div>
+    }
+
+    <div class="book-details-container" role="article" aria-labelledby="book-title-@Model.BookId">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <img src="@("/images/" + Model.ImageUrl + ".jpg")" class="book-image img-fluid" alt="@Model.Title" loading="lazy" />
+            </div>
+            <div class="col-md-8 col-12">
+                <h2 class="book-title" id="book-title-@Model.BookId">@Model.Title</h2>
+                <p class="book-author"><strong>Tác giả:</strong> @Model.Author</p>
+                <p class="book-category"><strong>Thể loại:</strong> @(Model.Category?.Name ?? "Không xác định")</p>
+                <p class="book-stock @(Model.Quantity <= 0 ? "out-of-stock" : "")" aria-label="Stock status">
+                    @(Model.Quantity > 0 ? $"Còn {Model.Quantity} sách" : "Hết hàng")
+                </p>
+                <p class="book-comments"><strong>Bình luận:</strong> @(Model.Comments?.Count ?? 0)</p>
+                <p class="book-description" aria-describedby="book-desc-@Model.BookId">@Model.Description</p>
+                <p class="book-price" aria-label="Price">@Model.Price.ToString("N0") VNĐ</p>
+                <form asp-controller="Cart" asp-action="AddToCart" method="post">
+                    <input type="hidden" name="id" value="@Model.BookId" />
+                    <button type="submit" class="btn btn-primary" aria-label="Add @Model.Title to cart" @(Model.Quantity <= 0 ? "disabled" : "")>
+                        <i class="bi bi-cart"></i> Thêm vào giỏ hàng
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

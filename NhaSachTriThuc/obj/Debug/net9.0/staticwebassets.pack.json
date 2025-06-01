@@ -1,0 +1,353 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\NhaSachTriThuc.bundle.scp.css",
+      "PackagePath": "staticwebassets\\NhaSachTriThuc.b6mgcuvm35.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\ai-trong-linh-vuc-kinh-te-va-tai-chinh.jpg",
+      "PackagePath": "staticwebassets\\Images\\ai-trong-linh-vuc-kinh-te-va-tai-chinh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\bai-ca-solomon.jpg",
+      "PackagePath": "staticwebassets\\Images\\bai-ca-solomon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\bi-quyet-kinh-doanh-thue-va-cho-thue-nha-tap-2-hanh-trinh-tu-ly-thuyet-toi-thuc-tien.jpg",
+      "PackagePath": "staticwebassets\\Images\\bi-quyet-kinh-doanh-thue-va-cho-thue-nha-tap-2-hanh-trinh-tu-ly-thuyet-toi-thuc-tien.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\chien-luoc-dau-tu-vang-sinh-loi.jpg",
+      "PackagePath": "staticwebassets\\Images\\chien-luoc-dau-tu-vang-sinh-loi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\con-duong-chang-may-ai-di.jpg",
+      "PackagePath": "staticwebassets\\Images\\con-duong-chang-may-ai-di.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\cuoc-doi-cua-pi.jpg",
+      "PackagePath": "staticwebassets\\Images\\cuoc-doi-cua-pi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\doi-thu-sieu-pham.jpg",
+      "PackagePath": "staticwebassets\\Images\\doi-thu-sieu-pham.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\marketing-tinh-gon-lean-marketing-loi-nhuan-nhieu-hon-quang-cao-it-hon.jpg",
+      "PackagePath": "staticwebassets\\Images\\marketing-tinh-gon-lean-marketing-loi-nhuan-nhieu-hon-quang-cao-it-hon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\mua-do.jpg",
+      "PackagePath": "staticwebassets\\Images\\mua-do.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\ngu-van-12-tap-1-chan-troi.jpg",
+      "PackagePath": "staticwebassets\\Images\\ngu-van-12-tap-1-chan-troi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\ngu-van-12-tap-2-chan-troi.jpg",
+      "PackagePath": "staticwebassets\\Images\\ngu-van-12-tap-2-chan-troi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\nuoi-day-em-be-co-chinh-kien.jpg",
+      "PackagePath": "staticwebassets\\Images\\nuoi-day-em-be-co-chinh-kien.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\phuong-phap-giao-duc-con-cua-nguoi-do-thai-giup-tre-tu-tin-buoc-vao-cuoc-song.jpg",
+      "PackagePath": "staticwebassets\\Images\\phuong-phap-giao-duc-con-cua-nguoi-do-thai-giup-tre-tu-tin-buoc-vao-cuoc-song.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\suc-manh-cua-eq.jpg",
+      "PackagePath": "staticwebassets\\Images\\suc-manh-cua-eq.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\toan-12-tap-1-chan-troi.jpg",
+      "PackagePath": "staticwebassets\\Images\\toan-12-tap-1-chan-troi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\toan-12-tap-2-chan-troi.jpg",
+      "PackagePath": "staticwebassets\\Images\\toan-12-tap-2-chan-troi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\tu-duy-nguoc.jpg",
+      "PackagePath": "staticwebassets\\Images\\tu-duy-nguoc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\yeu-nhung-dieu-khong-hoan-hao.jpg",
+      "PackagePath": "staticwebassets\\Images\\yeu-nhung-dieu-khong-hoan-hao.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.NhaSachTriThuc.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.NhaSachTriThuc.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.NhaSachTriThuc.props",
+      "PackagePath": "build\\NhaSachTriThuc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.NhaSachTriThuc.props",
+      "PackagePath": "buildMultiTargeting\\NhaSachTriThuc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.NhaSachTriThuc.props",
+      "PackagePath": "buildTransitive\\NhaSachTriThuc.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
