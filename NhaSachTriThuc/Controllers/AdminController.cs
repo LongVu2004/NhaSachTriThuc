@@ -250,7 +250,7 @@ namespace NhaSachTriThuc.Controllers
                 Price = model.Price,
                 Quantity = model.Quantity,
                 Description = model.Description,
-                CategoryId = model.CategoryId,
+                CategoryId = (int)model.CategoryId,
                 ImageUrl = imagePath
             };
 

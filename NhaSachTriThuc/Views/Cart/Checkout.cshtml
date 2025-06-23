@@ -149,16 +149,14 @@
                             </button>
                         </div>
                     </form>
-                    <td>
-                        <form method="POST" asp-action="CreatePaymentUrlVnpay" asp-controller="Payment">
-                            <input type="hidden" name="Name" value="@User.Identity.Name"  
-                            <input type="hidden" name="Amount" value="@ViewBag.TotalAmount" />
-                            <input type="hidden" name="OrderDescription" value="Thanh toán qua VNPAY tại Nhà Sách Tri Thức" />
-                            <input type="hidden" name="OrderType" value="other" />
+                    <form method="POST" asp-action="CreatePaymentUrlVnpay" asp-controller="Payment">
+                        <input type="hidden" name="Name" value="@User.Identity.Name"  
+                        <input type="hidden" name="Amount" value="@ViewBag.Total" />
+                        <input type="hidden" name="OrderDescription" value="Thanh toán qua VNPAY tại Nhà Sách Tri Thức" />
+                        <input type="hidden" name="OrderType" value="other" />
 
-                            <button type="submit" class="btn btn-primary w-45">Thanh toán VNPAY</button>
-                        </form>
-                    </td>
+                        <button type="submit" class="btn btn-primary w-45">Thanh toán VNPAY</button>
+                    </form>
                 </div>
             </div>
         </div>

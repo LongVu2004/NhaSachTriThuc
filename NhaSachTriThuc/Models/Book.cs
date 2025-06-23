@@ -15,8 +15,8 @@ namespace NhaSachTriThuc.Models
         [Required(ErrorMessage = "Giá bán là bắt buộc.")]
         [Range(0, double.MaxValue, ErrorMessage = "Giá bán phải lớn hơn hoặc bằng 0.")]
         public decimal Price { get; set; }
-        public string ImageUrl { get; set; }
-        public string Description { get; set; }
+        public string? ImageUrl { get; set; }
+        public string? Description { get; set; }
 
         [Required(ErrorMessage = "Số lượng là bắt buộc.")]
         [Range(0, int.MaxValue, ErrorMessage = "Số lượng phải lớn hơn hoặc bằng 0.")]
@@ -27,7 +27,7 @@ namespace NhaSachTriThuc.Models
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
 
-        public List<OrderDetail> OrderDetails { get; set; }
-        public List<Comment> Comments { get; set; }
+        public List<OrderDetail>? OrderDetails { get; set; }
+        public List<Comment>? Comments { get; set; }
     }
 }

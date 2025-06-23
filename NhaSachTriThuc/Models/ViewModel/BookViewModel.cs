@@ -29,8 +29,8 @@ namespace NhaSachTriThuc.ViewModels
         public int Quantity { get; set; }
 
         [Required(ErrorMessage = "Danh mục là bắt buộc.")]
-        public int CategoryId { get; set; }
+        public int? CategoryId { get; set; }
 
-        public IEnumerable<SelectListItem> Categories { get; set; } // Danh sách danh mục đổ vào DropDownList
+        public IEnumerable<SelectListItem>? Categories { get; set; } // Danh sách danh mục đổ vào DropDownList
     }
 }
