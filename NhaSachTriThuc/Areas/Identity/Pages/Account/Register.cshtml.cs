@@ -76,6 +76,8 @@ namespace NhaSachTriThuc.Areas.Identity.Pages.Account
         /// </summary>
         public class InputModel
         {
+            //[Required]
+            //public string FullName { get; set; }
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -103,6 +105,8 @@ namespace NhaSachTriThuc.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+            //public string? Avatar { get; set; } = "default.jpg"; // Đường dẫn đến ảnh đại diện mặc định
+            //public string? Address { get; set; } 
             public string? Role { get; set; }
             [ValidateNever]
             public IEnumerable<SelectListItem> RoleList { get; set; }
@@ -146,8 +150,14 @@ namespace NhaSachTriThuc.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User created a new account with password.");
 
-                    string role = string.IsNullOrEmpty(Input.Role) ? SD.Role_Customer : Input.Role;
-                    await _userManager.AddToRoleAsync(user, role);
+                    if(!String.IsNullOrEmpty(Input.Role))
+                    {
+                        await _userManager.AddToRoleAsync(user, Input.Role);
+                    }
+                    else
+                    {
+                        await _userManager.AddToRoleAsync(user, SD.Role_Customer);
+                    }
 
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -192,7 +202,7 @@ namespace NhaSachTriThuc.Areas.Identity.Pages.Account
                 throw new InvalidOperationException($"Can't create an instance of '{nameof(IdentityUser)}'. " +
                     $"Ensure that '{nameof(IdentityUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
                     $"override the register page in /Areas/Identity/Pages/Account/Register.cshtml");
-            }
+            }   
         }
 
         private IUserEmailStore<IdentityUser> GetEmailStore()

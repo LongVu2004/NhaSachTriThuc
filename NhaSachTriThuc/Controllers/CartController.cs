@@ -2,18 +2,22 @@
 using NhaSachTriThuc.Data;
 using NhaSachTriThuc.Models;
 using NhaSachTriThuc.Repositories;
-
+using NhaSachTriThuc.Services;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 namespace NhaSachTriThuc.Controllers
 {
     public class CartController : Controller
     {
         private readonly AppDbContext _context;
         private readonly ICartRepository _cartRepo;
+        private readonly IVnPayService _vnPayService;
 
-        public CartController(AppDbContext context, ICartRepository cartRepo)
+        public CartController(AppDbContext context, ICartRepository cartRepo, IVnPayService vnPayService)
         {
             _context = context;
             _cartRepo = cartRepo;
+            _vnPayService = vnPayService;
         }
 
         [HttpGet]
@@ -51,6 +55,7 @@ namespace NhaSachTriThuc.Controllers
         }
 
         // Hiển thị form thanh toán
+        [Authorize]
         [HttpGet]
         public IActionResult Checkout()
         {
@@ -66,9 +71,22 @@ namespace NhaSachTriThuc.Controllers
         }
 
         // Xử lý form thanh toán
+        [Authorize]
         [HttpPost]
         public IActionResult Checkout(string customerName, string customerPhone, string customerAddress)
         {
+            //var cart = _cartRepo.GetCart();
+            //if (cart == null || !cart.Any())
+            //{
+            //    TempData["Error"] = "Giỏ hàng trống.";
+            //    return RedirectToAction("Index");
+            //}
+            if (!User.Identity.IsAuthenticated)
+            {
+                TempData["Error"] = "Bạn cần đăng nhập để thanh toán.";
+                return RedirectToAction("Login", "Account"); // hoặc route đúng của Identity
+            }
+
             var cart = _cartRepo.GetCart();
             if (cart == null || !cart.Any())
             {
@@ -76,9 +94,20 @@ namespace NhaSachTriThuc.Controllers
                 return RedirectToAction("Index");
             }
 
+            foreach (var item in cart)
+            {
+                var book = _context.Books.FirstOrDefault(b => b.BookId == item.BookId);
+                if (book == null || book.Quantity < item.Quantity)
+                {
+                    TempData["Error"] = $"Sách '{book?.Title ?? "Không xác định"}' không đủ số lượng.";
+                    return RedirectToAction("Index");
+                }
+            }
+
             var order = new Order
             {
-                OrderDate = DateTime.Now,
+                UserId = User.FindFirstValue(ClaimTypes.NameIdentifier), // Lấy UserId từ Claims
+                OrderDate = DateTime.UtcNow,
                 CustomerName = customerName,
                 CustomerPhone = customerPhone,
                 CustomerAddress = customerAddress,
@@ -93,6 +122,18 @@ namespace NhaSachTriThuc.Controllers
             };
 
             _context.Orders.Add(order);
+            _context.SaveChanges();
+
+            // Trừ số lượng tồn kho
+            foreach (var item in order.OrderDetails)
+            {
+                var book = _context.Books.FirstOrDefault(b => b.BookId == item.BookId);
+                if (book != null)
+                {
+                    book.Quantity -= item.Quantity;
+                    if (book.Quantity < 0) book.Quantity = 0; // hoặc throw exception tùy yêu cầu
+                }
+            }
             _context.SaveChanges();
 
             _cartRepo.ClearCart(); // Xóa giỏ hàng
@@ -134,6 +175,14 @@ namespace NhaSachTriThuc.Controllers
         {
             _cartRepo.DecreaseQuantity(id);
             return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult PaymentCallbackVnpay()
+        {
+            var response = _vnPayService.PaymentExecute(Request.Query);
+
+            return Json(response);
         }
     }
 }

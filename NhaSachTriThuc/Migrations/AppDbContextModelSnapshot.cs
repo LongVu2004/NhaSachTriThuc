@@ -295,9 +295,18 @@ namespace NhaSachTriThuc.Migrations
                     b.Property<DateTime>("DatePosted")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("CommentId");
 
                     b.HasIndex("BookId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Comments");
                 });
@@ -331,6 +340,10 @@ namespace NhaSachTriThuc.Migrations
                     b.Property<decimal>("TotalAmount")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("OrderId");
 
                     b.ToTable("Orders");
@@ -363,6 +376,23 @@ namespace NhaSachTriThuc.Migrations
                     b.HasIndex("OrderId");
 
                     b.ToTable("OrderDetails");
+                });
+
+            modelBuilder.Entity("NhaSachTriThuc.Models.UserProfile", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Avatar")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("UserProfiles");
                 });
 
             modelBuilder.Entity("NhaSachTriThuc.Models.Wishlist", b =>
@@ -462,7 +492,15 @@ namespace NhaSachTriThuc.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Book");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("NhaSachTriThuc.Models.OrderDetail", b =>
@@ -482,6 +520,17 @@ namespace NhaSachTriThuc.Migrations
                     b.Navigation("Book");
 
                     b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("NhaSachTriThuc.Models.UserProfile", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithOne()
+                        .HasForeignKey("NhaSachTriThuc.Models.UserProfile", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("NhaSachTriThuc.Models.Wishlist", b =>

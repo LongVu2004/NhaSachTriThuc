@@ -17,6 +17,13 @@ namespace NhaSachTriThuc.Controllers
 
         public async Task<IActionResult> Index()
         {
+            string imageFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/slideshow");
+            var imageFiles = Directory.GetFiles(imageFolder)
+                .Select(Path.GetFileName) // chỉ lấy tên file
+                .ToList();
+
+            ViewBag.ImageList = imageFiles;
+
             var books = await _context.Books
                 .Include(b => b.Category)
                 .OrderByDescending(b => b.BookId)
@@ -44,6 +51,26 @@ namespace NhaSachTriThuc.Controllers
             if (book == null) return NotFound();
 
             return PartialView("_BookDetailsPartial", book);
+        }
+        [HttpGet]
+        public IActionResult FilterByPrice(int? range)
+        {
+            var books = _context.Books.AsQueryable();
+
+            switch (range)
+            {
+                case 1: // Dưới 50k
+                    books = books.Where(b => b.Price < 50000);
+                    break;
+                case 2: // 50k - 100k
+                    books = books.Where(b => b.Price >= 50000 && b.Price <= 100000);
+                    break;
+                case 3: // Trên 100k
+                    books = books.Where(b => b.Price > 100000);
+                    break;
+            }
+
+            return View("Index", books.ToList());
         }
 
 

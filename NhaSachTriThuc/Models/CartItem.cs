@@ -1,4 +1,6 @@
-﻿namespace NhaSachTriThuc.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace NhaSachTriThuc.Models
 {
     public class CartItem
     {

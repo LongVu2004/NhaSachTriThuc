@@ -120,12 +120,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Category/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Order/History.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSGlzdG9yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Product/Category.cshtml]
@@ -136,8 +160,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Product/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Product/_DetailsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxfRGV0YWlsc1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Profile/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Shared/Error.cshtml]
@@ -146,6 +178,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Shared/_CategoryDropdown.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXRlZ29yeURyb3Bkb3duLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/phaml/source/repos/NhaSachTriThuc/NhaSachTriThuc/Views/Shared/_LoginPartial.cshtml]

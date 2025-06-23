@@ -13,15 +13,15 @@
 @page
 @model AccessDeniedModel
 @{
-    ViewData["Title"] = "Access Denied 404";
+    ViewData["Title"] = "Truy cập bị từ chối - Lỗi 403";
 }
 
 <div class="container d-flex justify-content-center align-items-center min-vh-100">
     <div class="card modern-card text-center p-5" aria-labelledby="access-denied-title">
         <div class="card-body">
             <h1 class="card-title text-danger fw-bold mb-3" id="access-denied-title">@ViewData["Title"]</h1>
-            <p class="card-text text-muted mb-4">You do not have access to this resource.</p>
-            <a href="/" class="btn btn-primary btn-lg btn-return-home">Back to Home</a>
+            <p class="card-text text-muted mb-4">Bạn không có quyền truy cập trang này. Vui lòng quay lại.</p>
+            <a href="/" class="btn btn-primary btn-lg btn-return-home">Trang chủ</a>
         </div>
     </div>
 </div>

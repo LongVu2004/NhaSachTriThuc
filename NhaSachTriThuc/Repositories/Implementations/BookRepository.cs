@@ -12,25 +12,45 @@ namespace NhaSachTriThuc.Repositories.Implementations
         {
             _context = context;
         }
-
-        public IEnumerable<Book> GetAllBooks()
+        public async Task <IEnumerable<Book>> GetAllBooks()
         {
-            return _context.Books.Include(b => b.Category).ToList();
+            //return _context.Books.Include(b => b.Category).ToList();
+            return await _context.Books.Include(b => b.Category)
+                .ToListAsync();
         }
 
-        public IEnumerable<Book> GetBooksByCategory(int categoryId)
+        public async Task<IEnumerable<Book>> GetBooksByCategory(int categoryId)
         {
-            return _context.Books
+            return await _context.Books
                 .Include(b => b.Category)
                 .Where(b => b.CategoryId == categoryId)
-                .ToList();
+                .ToListAsync();
+        }
+        public async Task AddBookAsync(Book book)
+        {
+            _context.Books.Add(book);
+            await _context.SaveChangesAsync();
         }
 
-        public Book GetBookById(int id)
+        public async Task<Book> GetBookById(int id)
         {
-            return _context.Books
+            return await _context.Books
                 .Include(b => b.Category)
-                .FirstOrDefault(b => b.BookId == id);
+                .Include(b => b.Comments)
+                .ThenInclude(c => c.User)
+                .FirstOrDefaultAsync(b => b.BookId == id);
+        }
+
+        public async Task UpdateBookAsync(Book book)
+        {
+            _context.Books.Update(book);
+            await _context.SaveChangesAsync();
+        }
+        public async Task DeleteBookAsync(int id)
+        {
+            var book = _context.Books.FindAsync(id);
+            _context.Books.Remove(book.Result);
+            await _context.SaveChangesAsync();
         }
     }
 }

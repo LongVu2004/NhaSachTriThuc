@@ -1,7 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity;
 @model List<(IdentityUser user, IList<string> roles)>
 @{
-    ViewData["Title"] = "Quản lý người dùng";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
     var availableRoles = (List<string>)ViewBag.Roles;
 }
 

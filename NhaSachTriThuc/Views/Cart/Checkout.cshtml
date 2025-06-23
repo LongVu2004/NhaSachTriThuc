@@ -1,4 +1,4 @@
-﻿@{
+﻿@* @{
     ViewData["Title"] = "Thanh toán đơn hàng";
 }
 
@@ -20,5 +20,151 @@
     <div class="mb-3">
         <strong>Tổng tiền: @ViewBag.Total.ToString("n0") đ</strong>
     </div>
-    <button type="submit" class="btn btn-success">Xác nhận đặt hàng</button>
+    <button type="submit" class="btn btn-success">Thanh Toán COD</button>
+    <form method="POST" asp-action="CreatePaymentVnpay" asp-controller="Payment">
+        <input type="hidden" name="Name" value="@User.Identity.Name" />
+        <input type="hidden" name="Amount" value="@Model.TotalAmount" />
+        <input type="hidden" name="OrderDescription" value="Thanh toán qua VNPAY tại Nhà Sách Tri Thức" />
+        <input type="hidden" name="OrderType" value="other" />
+    </form>
+</form> *@
+
+@* @{
+    ViewData["Title"] = "Thanh toán đơn hàng";
+}
+
+<h2>Thông tin thanh toán</h2>
+
+<form id="checkout-form" method="post">
+    <div class="mb-3">
+        <label>Họ tên</label>
+        <input type="text" name="customerName" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Số điện thoại</label>
+        <input type="text" name="customerPhone" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Địa chỉ giao hàng</label>
+        <textarea name="customerAddress" class="form-control" required></textarea>
+    </div>
+
+    <input type="hidden" name="Amount" value="@ViewBag.Total" />
+    <input type="hidden" name="OrderDescription" value="Thanh toán qua VNPAY tại Nhà Sách Tri Thức" />
+    <input type="hidden" name="OrderType" value="other" />
+    <input type="hidden" name="Name" value="@User.Identity?.Name" />
+
+    <div class="mb-3">
+        <strong>Tổng tiền: @ViewBag.Total.ToString("n0") đ</strong>
+    </div>
+
+    <div class="d-flex gap-3">
+        <!-- Thanh toán COD -->
+        <button type="submit" class="btn btn-success" formaction="/Cart/Checkout">Thanh toán COD</button>
+
+        <!-- Thanh toán VNPAY -->
+        <button type="submit" class="btn btn-primary" formaction="/Payment/CreatePaymentVnpay">Thanh toán VNPAY</button>
+    </div>
 </form>
+ *@
+
+@* @{
+    ViewData["Title"] = "Thanh toán đơn hàng";
+    var userName = User.Identity?.IsAuthenticated == true ? User.Identity.Name : "";
+}
+
+<h2>Thông tin thanh toán</h2>
+
+<form id="checkout-form" method="post">
+    <div class="mb-3">
+        <label>Họ tên</label>
+        <input type="text" name="customerName" class="form-control" value="@userName" required />
+    </div>
+
+    <div class="mb-3">
+        <label>Số điện thoại</label>
+        <input type="text" name="customerPhone" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label>Địa chỉ giao hàng</label>
+        <textarea name="customerAddress" class="form-control" required></textarea>
+    </div>
+
+    <input type="hidden" name="Name" value="@User.Identity.Name" />
+    <input type="hidden" name="Amount" value="@ViewBag.Total" />
+    <input type="hidden" name="OrderDescription" value="Thanh toán qua VNPAY tại Nhà Sách Tri Thức" />
+    <input type="hidden" name="OrderType" value="other" />
+
+    <div class="mb-3">
+        <strong>Tổng tiền: @ViewBag.Total.ToString("n0") đ</strong>
+    </div>
+
+    <div class="d-flex gap-3">
+        <!-- Thanh toán COD -->
+        <button type="submit" class="btn btn-success" formaction="/Cart/Checkout">
+            Thanh toán COD
+        </button>
+
+        <!-- Thanh toán VNPAY -->
+        <button type="submit" class="btn btn-primary" formaction="/Payment/CreatePaymentVnpay">
+            Thanh toán VNPAY
+        </button>
+    </div>
+</form> *@
+@{
+    ViewData["Title"] = "Thanh toán đơn hàng";
+    var userName = User.Identity?.IsAuthenticated == true ? User.Identity.Name : "";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow rounded-4">
+                <div class="card-body p-5">
+                    <h3 class="mb-4 text-center">Thông tin thanh toán</h3>
+
+                    <form id="checkout-form" method="post">
+                        <div class="mb-3">
+                            <label class="form-label">Họ tên</label>
+                            <input type="text" name="customerName" class="form-control" value="@userName" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Số điện thoại</label>
+                            <input type="text" name="customerPhone" class="form-control" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Địa chỉ giao hàng</label>
+                            <textarea name="customerAddress" class="form-control" required></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <h5>Tổng tiền: <strong class="text-danger">@ViewBag.Total.ToString("n0") đ</strong></h5>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-success w-45" formaction="/Cart/Checkout">
+                                Thanh toán COD
+                            </button>
+                        </div>
+                    </form>
+                    <td>
+                        <form method="POST" asp-action="CreatePaymentUrlVnpay" asp-controller="Payment">
+                            <input type="hidden" name="Name" value="@User.Identity.Name"  
+                            <input type="hidden" name="Amount" value="@ViewBag.TotalAmount" />
+                            <input type="hidden" name="OrderDescription" value="Thanh toán qua VNPAY tại Nhà Sách Tri Thức" />
+                            <input type="hidden" name="OrderType" value="other" />
+
+                            <button type="submit" class="btn btn-primary w-45">Thanh toán VNPAY</button>
+                        </form>
+                    </td>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

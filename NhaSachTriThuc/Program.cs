@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using NhaSachTriThuc.Data;
 using NhaSachTriThuc.Repositories;
 using NhaSachTriThuc.Repositories.Implementations;
+using NhaSachTriThuc.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,8 +15,6 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddDefaultTokenProviders()
     .AddDefaultUI()
     .AddEntityFrameworkStores<AppDbContext>();
-
-
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
@@ -30,8 +29,12 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped<ICartRepository, CartRepository>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IUserProfileRepository, UserProfileRepository>();
 
 builder.Services.AddSession();
+builder.Services.AddScoped<IVnPayService, VnPayService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -66,12 +69,11 @@ foreach (var role in roles)
 
 app.MapControllerRoute(
     name: "areas",
-    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+    pattern: "{area:exists}/{controller=Admin}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 
 app.Run();

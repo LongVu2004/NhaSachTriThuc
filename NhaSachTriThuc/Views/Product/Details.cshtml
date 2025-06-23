@@ -1,5 +1,6 @@
-﻿@model NhaSachTriThuc.Models.Book
+﻿
 
+@model NhaSachTriThuc.Models.Book
 <style>
     /* Custom styles for book details */
     .book-details-container {
@@ -12,8 +13,8 @@
 
     .book-image {
         object-fit: cover;
-        height: 300px;
-        width: 100%;
+        height: 100px;
+        width: 500;
         border-radius: 6px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
@@ -71,7 +72,7 @@
         padding: 0.5rem 1rem;
         font-size: 1rem;
         color: #fff;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         gap: 0.5rem;
         transition: background-color 0.3s ease;
@@ -124,21 +125,83 @@
                 opacity: 0.7;
             }
 
-
-    opacity: 0;
-    transform: translateY(-20px);
+    /* Comments container */
+    .comments-container {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+        .comments-container h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+    .comment-item {
+        padding: 0.75rem;
+        border-bottom: 1px solid #e9ecef;
+        transition: background-color 0.2s ease;
     }
 
+        .comment-item:last-child {
+            border-bottom: none;
+        }
+
+        .comment-item:hover {
+            background-color: #f1f3f5;
+        }
+
+    .comment-user {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #333;
     }
 
-
-    padding: 1rem;
+    .comment-date {
+        font-size: 0.85rem;
+        color: #6c757d;
+        margin-left: 0.5rem;
     }
+
+    .comment-content {
+        font-size: 0.95rem;
+        color: #495057;
+        margin-top: 0.25rem;
+    }
+
+    .comment-form {
+        margin-top: 1rem;
+        padding: 1rem;
+        background: #fff;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+    }
+
+        .comment-form .form-label {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .comment-form .form-control {
+            border-radius: 4px;
+            border: 1px solid #ced4da;
+            font-size: 0.95rem;
+        }
+
+            .comment-form .form-control:focus {
+                border-color: #007bff;
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+            }
+
+    
+    
+
+    
 
     .book-image {
         height: 200px;
@@ -172,16 +235,32 @@
         padding: 0.5rem 0.75rem;
     }
 
+    .comments-container {
+        padding: 0.75rem;
     }
 
+        .comments-container h3 {
+            font-size: 1.1rem;
+        }
 
-    opacity: 0;
-    transform: translateY(20px);
+    .comment-item {
+        padding: 0.5rem;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .comment-user {
+        font-size: 0.9rem;
+    }
+
+    .comment-date {
+        font-size: 0.8rem;
+    }
+
+    .comment-content {
+        font-size: 0.9rem;
+    }
+
+    .comment-form {
+        padding: 0.75rem;
     }
 
     }
@@ -211,16 +290,35 @@
     <div class="book-details-container" role="article" aria-labelledby="book-title-@Model.BookId">
         <div class="row">
             <div class="col-md-4 col-12">
-                <img src="@("/images/" + Model.ImageUrl + ".jpg")" class="book-image img-fluid" alt="@Model.Title" loading="lazy" />
+                <img src="@Model.ImageUrl" class="book-image img-fluid" alt="@Model.Title" loading="lazy" />
             </div>
             <div class="col-md-8 col-12">
                 <h2 class="book-title" id="book-title-@Model.BookId">@Model.Title</h2>
                 <p class="book-author"><strong>Tác giả:</strong> @Model.Author</p>
                 <p class="book-category"><strong>Thể loại:</strong> @(Model.Category?.Name ?? "Không xác định")</p>
                 <p class="book-stock @(Model.Quantity <= 0 ? "out-of-stock" : "")" aria-label="Stock status">
-                    @(Model.Quantity > 0 ? $"Còn {Model.Quantity} sách" : "Hết hàng")
+                    @(Model.Quantity > 0 ? $"Kho: {Model.Quantity}" : "Hết hàng")
                 </p>
                 <p class="book-comments"><strong>Bình luận:</strong> @(Model.Comments?.Count ?? 0)</p>
+                <div class="comments-container">
+                    <h3>Bình luận</h3>
+                    @if (Model.Comments != null && Model.Comments.Any())
+                    {
+                        <div class="comment-list">
+                            @foreach (var comment in Model.Comments.OrderByDescending(c => c.DatePosted))
+                            {
+                                <div class="comment-item">
+                                    <div class="comment-user">@comment.User?.UserName<span class="comment-date">(@comment.DatePosted.ToString("dd/MM/yyyy HH:mm"))</span></div>
+                                    <div class="comment-content">@comment.Content</div>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Chưa có bình luận nào.</p>
+                    }
+                </div>
                 <p class="book-description" aria-describedby="book-desc-@Model.BookId">@Model.Description</p>
                 <p class="book-price" aria-label="Price">@Model.Price.ToString("N0") VNĐ</p>
                 <form asp-controller="Cart" asp-action="AddToCart" method="post">
@@ -229,6 +327,23 @@
                         <i class="bi bi-cart"></i> Thêm vào giỏ hàng
                     </button>
                 </form>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div class="comment-form">
+                        <form asp-controller="Comments" asp-action="Create" method="post">
+                            <input type="hidden" name="bookId" value="@Model.BookId" />
+                            <div class="mb-3">
+                                <label for="content" class="form-label">Nội dung bình luận</label>
+                                <textarea name="content" class="form-control" required rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                        </form>
+                    </div>
+                }
+                else
+                {
+                    <p>Vui lòng <a href="/Identity/Account/Login">đăng nhập</a> để bình luận.</p>
+                }
             </div>
         </div>
     </div>

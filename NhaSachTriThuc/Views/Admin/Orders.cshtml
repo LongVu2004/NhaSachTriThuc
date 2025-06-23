@@ -1,36 +1,14 @@
-﻿@* @model List<Order>
+﻿ @model List<Order>
+@using NhaSachTriThuc.Models
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
 
-<h2>📦 Danh sách đơn hàng</h2>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Mã đơn</th>
-            <th>Ngày đặt</th>
-            <th>Trạng thái</th>
-            <th>Chi tiết</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var order in Model)
-        {
-            <tr>
-                <td>@order.OrderId</td>
-                <td>@order.OrderDate.ToString("dd/MM/yyyy")</td>
-                <td>@order.Status</td>
-                <td>
-                    <a href="/Admin/OrderDetails/@order.OrderId" class="btn btn-sm btn-primary">Chi tiết</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
- *@
-
- @model List<Order>
 
 <div class="container py-5">
     <h2 class="display-6 fw-bold text-dark mb-4">📦 Danh sách đơn hàng</h2>
+    <a class="btn btn-primary" asp-controller="Admin" asp-action="Index">Quay lại</a>
     <div class="row g-4">
         @foreach (var order in Model)
         {

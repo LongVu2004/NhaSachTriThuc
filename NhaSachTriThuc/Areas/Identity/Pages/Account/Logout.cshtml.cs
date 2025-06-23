@@ -38,5 +38,10 @@ namespace NhaSachTriThuc.Areas.Identity.Pages.Account
                 return RedirectToPage();
             }
         }
+
+        public IActionResult OnGet()
+        {
+            return Redirect("~/"); // hoặc RedirectToPage("/Index");
+        }
     }
 }

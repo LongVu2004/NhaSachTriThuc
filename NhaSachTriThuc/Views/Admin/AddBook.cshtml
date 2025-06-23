@@ -1,37 +1,59 @@
-﻿@model Book
+﻿@model NhaSachTriThuc.ViewModels.BookViewModel
 
-<h3>➕ Thêm sách mới</h3>
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewData["Title"] = "Thêm sách mới";
+}
 
 <form asp-controller="Admin" asp-action="AddBook" method="post" enctype="multipart/form-data">
-    <div class="mb-3">
-        <label>Tiêu đề</label>
-        <input class="form-control" name="Title" required />
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div>
+        <label asp-for="Title"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
     </div>
-    <div class="mb-3">
-        <label>Tác giả</label>
-        <input class="form-control" name="Author" required />
+
+    <div class="form-group">
+        <label asp-for="Author"></label>
+        <input asp-for="Author" class="form-control" />
+        <span asp-validation-for="Author" class="text-danger"></span>
     </div>
-    <div class="mb-3">
-        <label>Giá bán</label>
-        <input class="form-control" name="Price" type="number" required />
+
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" type="number" step="0.01" min="0" />
+        <span asp-validation-for="Price" class="text-danger"></span>
     </div>
-    <div class="mb-3">
-        <label>Mô tả</label>
-        <textarea class="form-control" name="Description"></textarea>
+
+    <div class="form-group">
+        <label asp-for="Quantity"></label>
+        <input asp-for="Quantity" class="form-control" type="number" min="0" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
     </div>
-    <div class="mb-3">
-        <label>Chọn ảnh bìa</label>
-        <input class="form-control" type="file" name="ImageFile" accept="image/*"/>
-    </div>
-    <div class="mb-3">
-        <label>Danh mục</label>
-        <select name="CategoryId" class="form-control">
-            @foreach (var cat in (List<Category>)ViewBag.Categories)
-            {
-                <option value="@cat.CategoryId">@cat.Name</option>
-            }
+
+    <div class="form-group">
+        <label asp-for="CategoryId">Danh mục</label>
+        <select asp-for="CategoryId" asp-items="Model.Categories" class="form-control">
+            <option value="">-- Chọn danh mục --</option>
         </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
     </div>
-    <button type="submit" class="btn btn-success">Thêm sách</button>
-    <a href="@Url.Action("Index", "Admin")" class="btn btn-primary mt-3">Quay về trang chủ</a>
+
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ImageFile">Ảnh bìa</label>
+        <input asp-for="ImageFile" type="file" class="form-control-file" accept=".jpg,.jpeg,.png" />
+        <span asp-validation-for="ImageFile" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu</button>
 </form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

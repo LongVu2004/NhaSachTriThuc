@@ -1,12 +1,21 @@
 ﻿@model NhaSachTriThuc.Models.Order
 
-<h2>Đặt hàng thành công</h2>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow rounded-4">
+                <div class="card-body p-5 text-center">
+                    <h2 class="text-success mb-4">🎉 Đặt hàng thành công!</h2>
 
-<p>Cảm ơn bạn <strong>@Model.CustomerName</strong> đã đặt hàng.</p>
-<p>Chúng tôi sẽ giao hàng đến địa chỉ: <strong>@Model.CustomerAddress</strong>.</p>
-<p>Số điện thoại liên hệ: <strong>@Model.CustomerPhone</strong></p>
-<p>Ngày đặt: @Model.OrderDate.ToString("dd/MM/yyyy")</p>
-<p>Tổng tiền: <strong>@Model.TotalAmount.ToString("n0") đ</strong></p>
+                    <p class="fs-5">Cảm ơn bạn <strong>@Model.CustomerName</strong> đã đặt hàng.</p>
+                    <p>Địa chỉ giao hàng: <strong>@Model.CustomerAddress</strong></p>
+                    <p>Số điện thoại liên hệ: <strong>@Model.CustomerPhone</strong></p>
+                    <p>Ngày đặt: <strong>@Model.OrderDate.ToString("dd/MM/yyyy")</strong></p>
+                    <p class="fs-5 text-danger">Tổng tiền: <strong>@Model.TotalAmount.ToString("n0") đ</strong></p>
 
-<a href="@Url.Action("Index", "Home")" class="btn btn-primary mt-3">Quay về trang chủ</a>
-    
+                    <a href="@Url.Action("Index", "Home")" class="btn btn-primary mt-4 px-4 py-2">Quay về trang chủ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

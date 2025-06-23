@@ -1,0 +1,33 @@
+﻿@model IEnumerable<NhaSachTriThuc.Models.Category>
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewData["Title"] = "Danh sách thể loại";
+}
+
+
+<p>
+    <a class="btn btn-success" asp-action="Create">+ Thêm thể loại</a>
+    <a class="btn btn-secondary" asp-controller="Admin" asp-action="Index">Quay lại</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Tên thể loại</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@item.CategoryId">Sửa</a>
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.CategoryId">Xoá</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

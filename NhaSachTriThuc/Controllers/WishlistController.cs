@@ -73,7 +73,7 @@ namespace NhaSachTriThuc.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddSelectedToCart(int[] selectedBookIds)
-        {
+        {   
 
             if (selectedBookIds == null || selectedBookIds.Length == 0)
             {

@@ -1,0 +1,38 @@
+﻿@model NhaSachTriThuc.Models.Order
+
+<h2>Chi tiết đơn hàng #@Model.OrderId</h2>
+<p><strong>Ngày đặt:</strong> @Model.OrderDate.ToString("dd/MM/yyyy")</p>
+<p><strong>Trạng thái:</strong> @Model.Status</p>
+
+<table class="table table-bordered align-middle">
+    <thead>
+        <tr>
+            <th>Ảnh bìa</th>
+            <th>Tên sách</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Tổng</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderDetails)
+        {
+            <tr>
+                <td>
+                    <img src="@Url.Content(item.Book.ImageUrl)"
+                         alt="Bìa sách"
+                         style="width: 80px; height: auto; border-radius: 6px;" />
+                </td>
+                <td>@item.Book.Title</td>
+                <td>@item.UnitPrice.ToString("N0") đ</td>
+                <td>@item.Quantity</td>
+                <td>@string.Format("{0:N0}", item.UnitPrice * item.Quantity) đ</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p class="fw-bold fs-5">Tổng cộng: @Model.TotalAmount.ToString("N0") đ</p>
+<a href="@Url.Action("History", "Order")" class="btn btn-secondary mt-3">
+    ← Quay lại lịch sử đơn hàng
+</a>

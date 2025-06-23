@@ -1,5 +1,8 @@
 ﻿@model Order
 @using NhaSachTriThuc.Models
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
 
 <h3>🧾 Chi tiết đơn hàng #@Model.OrderId</h3>
 <p>Ngày đặt: @Model.OrderDate.ToString("dd/MM/yyyy")</p>

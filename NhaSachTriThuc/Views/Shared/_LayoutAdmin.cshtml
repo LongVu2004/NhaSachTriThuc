@@ -1,0 +1,261 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Admin Panel - @ViewData["Title"]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/admin.css" />
+    <style>
+        .user-actions .btn {
+            color: #fff;
+            background: transparent;
+            border: 1px solid #fff;
+            margin-left: 0.75rem;
+            padding: 0.4rem 0.8rem;
+            transition: all 0.3s ease;
+        }
+
+            .user-actions .btn:hover {
+                background: rgba(255, 255, 255, 0.15);
+                border-color: #f8f9fa;
+            }
+
+        .user-actions .dropdown-toggle::after {
+            display: none;
+        }
+
+        .user-actions .dropdown-menu {
+            min-width: 220px;
+            border-radius: 8px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #343a40;
+            padding: 3rem 1rem;
+            color: #f8f9fa;
+            font-size: 0.95rem;
+            margin-top: 3rem;
+            border-top: 5px solid #dc3545;
+        }
+
+            footer h5 {
+                font-weight: 600;
+                color: #fff;
+                margin-bottom: 1.5rem;
+                font-size: 1.2rem;
+            }
+
+            footer a {
+                color: #dee2e6;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+
+                footer a:hover {
+                    color: #dc3545;
+                    text-decoration: underline;
+                }
+
+            footer ul {
+                list-style: none;
+                padding: 0;
+            }
+
+                footer ul li {
+                    margin-bottom: 1rem;
+                }
+
+            footer .social-links a {
+                font-size: 1.4rem;
+                margin-right: 1.5rem;
+                color: #f8f9fa;
+                transition: color 0.3s ease;
+            }
+
+                footer .social-links a:hover {
+                    color: #28a745;
+                }
+
+            footer .contact-info i {
+                margin-right: 0.75rem;
+                color: #dc3545;
+            }
+
+            footer .tech-stack p {
+                margin: 0.5rem 0;
+                font-size: 0.9rem;
+            }
+
+            footer .footer-bottom {
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+                padding-top: 2rem;
+                margin-top: 2.5rem;
+                text-align: center;
+                font-size: 0.9rem;
+                color: #dee2e6;
+            }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #dc3545;
+            color: #fff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+            .back-to-top.show {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .back-to-top:hover {
+                background: #c82333;
+            }
+    </style>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Admin/Home">Admin Panel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbar" aria-controls="adminNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="adminNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Admin/Index"><i class="bi bi-house-door"></i> Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Admin/Users"><i class="bi bi-people-fill"></i> Người dùng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Admin/Products"><i class="bi bi-box-seam"></i> Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Admin/Orders"><i class="bi bi-cart-fill"></i> Đơn hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><i class="bi bi-globe"></i> Về trang chính</a>
+                    </li>
+                </ul>
+
+                <div class="dropdown mb-0">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <span>@User.Identity.Name</span>
+                        <a class="btn btn-sm dropdown-toggle" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-fill"></i> @Context.Session.GetString("UserName")
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="@Url.Action("Edit", "Profile")">Hồ sơ</a></li>
+                            <li><a class="dropdown-item" href="@Url.Action("History", "Order")">Lịch sử đơn hàng</a></li>
+                            @* <li><a asp-controller="Order" asp-action="History" class="nav-link">Lịch sử đơn hàng</a></li> *@
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <form method="post" asp-area="Identity" asp-page="/Account/Logout" id="logoutForm">
+                                    <button type="submit" class="dropdown-item">Đăng xuất</button>
+                                </form>
+
+                            </li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <a class="btn btn-sm" id="login" asp-area="Identity" asp-page="/Account/Login">Đăng nhập</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="d-flex">
+        <!-- Main Content -->
+        <div class="flex-grow-1 p-4">
+            <header class="mb-4">
+                <h2>@ViewData["Title"]</h2>
+            </header>
+            @RenderBody()
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h5>Về chúng tôi</h5>
+                    <ul>
+                        <li><a href="/About">Giới thiệu</a></li>
+                        <li><a href="/Terms">Điều khoản sử dụng</a></li>
+                        <li><a href="/Privacy">Chính sách bảo mật</a></li>
+                        <li><a href="/Contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Liên hệ</h5>
+                    <ul class="contact-info">
+                        <li><i class="bi bi-envelope-fill"></i> <a href="mailto:support@nhasachtrithuc.com">support@nhasachtrithuc.com</a></li>
+                        <li><i class="bi bi-telephone-fill"></i> <a href="tel:+84238238238">+84 23 823 8238</a></li>
+                        <li><i class="bi bi-geo-alt-fill"></i> 123 Đường Sách, Quận 1, TP. HCM</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Tech Stack</h5>
+                    <div class="tech-stack">
+                        <p><strong>Backend:</strong> ASP.NET Core 9.0, Entity Framework Core</p>
+                        <p><strong>Frontend:</strong> Bootstrap 5.3, jQuery, Axios</p>
+                        <p><strong>Data:</strong> SQL Server 2022, Redis (caching)</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Kết nối với chúng tôi</h5>
+                    <div class="social-links">
+                        <a href="https://facebook.com/fahasa" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://youtube.com/channel/UCUZcVOLSxK1q6RfgzQ9-HYQ" target="_blank" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+                        <a href="https://instagram.com/fahasa_official" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://linkedin.com/company/fahasa-com" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Nhà sách Tri Thức. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@3.2.12/dist/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    @RenderSection("Scripts", required: false)
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

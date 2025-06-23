@@ -1,0 +1,80 @@
+﻿@* @model NhaSachTriThuc.Models.UserProfile
+@{
+    ViewData["Title"] = "Chỉnh sửa hồ sơ";
+}
+
+<h2>Chỉnh sửa hồ sơ</h2>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label asp-for="FullName" class="form-label"></label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label>Ảnh đại diện hiện tại:</label><br />
+        @if (!string.IsNullOrEmpty(Model.Avatar))
+        {
+            <img src="@("~/avatars/" + Model.Avatar )" style="width: 100px; border-radius: 50%;" />
+        }
+        else
+        {
+            <p>Chưa có ảnh đại diện.</p>
+        }
+    </div>
+
+    <div class="mb-3">
+        <label>Chọn ảnh đại diện mới</label>
+        <input type="file" name="avatarFile" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+ *@
+ @model NhaSachTriThuc.Models.UserProfile
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+<h2>Cập nhật hồ sơ</h2>
+<div class="container my-5">
+    <h2 class="mb-4 text-center">Chỉnh sửa người dùng</h2>
+    <div class="card shadow-sm p-4 bg-light rounded">
+        <form asp-action="Edit" enctype="multipart/form-data" id="editForm" class="needs-validation" novalidate>
+            <input type="hidden" asp-for="@User.Identity.Name" />
+
+            <div class="form-group">
+                <label asp-for="FullName"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label for="avatarFile" class="form-label fw-bold">Avatar mới (nếu muốn đổi)</label>
+                <input type="file" name="avatarFile" class="form-control" id="avatarInput" accept="image/*" />
+                <small class="form-text text-muted">Chọn ảnh (jpg, png, ...).</small>
+                <div class="mt-2">
+                    <img src="@Model.Avatar" alt="Current Avatar" id="previewAvatar" class="img-fluid rounded-circle" style="max-width: 100px; max-height: 100px; object-fit: cover; display: @(string.IsNullOrEmpty(Model.Avatar) ? "none" : "block");" />
+                </div>
+            </div>
+
+            <div class="d-flex gap-2 mt-4">
+                <button type="submit" class="btn btn-primary" id="submitButton">
+                    <span id="submitText">Lưu</span>
+                    <span id="loadingSpinner" class="spinner-border spinner-border-sm d-none" role="status"></span>
+                </button>
+                <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

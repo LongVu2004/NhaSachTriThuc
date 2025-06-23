@@ -22,7 +22,7 @@ else
                     </td>
                     <td><img src="@("/images/" + Model[i].Book.ImageUrl + ".jpg")" width="80px" /></td>
                     <td>@Model[i].Book.Title</td>
-                    <td>@Model[i].Book.Price.ToString("C")</td>
+                    <td>@Model[i].Book.Price.ToString("N0") đ</td>
                 </tr>
             }
         </table>

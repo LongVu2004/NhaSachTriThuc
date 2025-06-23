@@ -5,84 +5,144 @@
       "PackagePath": "staticwebassets\\NhaSachTriThuc.b6mgcuvm35.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\ai-trong-linh-vuc-kinh-te-va-tai-chinh.jpg",
-      "PackagePath": "staticwebassets\\Images\\ai-trong-linh-vuc-kinh-te-va-tai-chinh.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\bai-ca-solomon.jpg",
-      "PackagePath": "staticwebassets\\Images\\bai-ca-solomon.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\bi-quyet-kinh-doanh-thue-va-cho-thue-nha-tap-2-hanh-trinh-tu-ly-thuyet-toi-thuc-tien.jpg",
-      "PackagePath": "staticwebassets\\Images\\bi-quyet-kinh-doanh-thue-va-cho-thue-nha-tap-2-hanh-trinh-tu-ly-thuyet-toi-thuc-tien.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\chien-luoc-dau-tu-vang-sinh-loi.jpg",
-      "PackagePath": "staticwebassets\\Images\\chien-luoc-dau-tu-vang-sinh-loi.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\con-duong-chang-may-ai-di.jpg",
-      "PackagePath": "staticwebassets\\Images\\con-duong-chang-may-ai-di.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\cuoc-doi-cua-pi.jpg",
-      "PackagePath": "staticwebassets\\Images\\cuoc-doi-cua-pi.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\doi-thu-sieu-pham.jpg",
-      "PackagePath": "staticwebassets\\Images\\doi-thu-sieu-pham.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\marketing-tinh-gon-lean-marketing-loi-nhuan-nhieu-hon-quang-cao-it-hon.jpg",
-      "PackagePath": "staticwebassets\\Images\\marketing-tinh-gon-lean-marketing-loi-nhuan-nhieu-hon-quang-cao-it-hon.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\mua-do.jpg",
-      "PackagePath": "staticwebassets\\Images\\mua-do.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\ngu-van-12-tap-1-chan-troi.jpg",
-      "PackagePath": "staticwebassets\\Images\\ngu-van-12-tap-1-chan-troi.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\ngu-van-12-tap-2-chan-troi.jpg",
-      "PackagePath": "staticwebassets\\Images\\ngu-van-12-tap-2-chan-troi.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\nuoi-day-em-be-co-chinh-kien.jpg",
-      "PackagePath": "staticwebassets\\Images\\nuoi-day-em-be-co-chinh-kien.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\phuong-phap-giao-duc-con-cua-nguoi-do-thai-giup-tre-tu-tin-buoc-vao-cuoc-song.jpg",
-      "PackagePath": "staticwebassets\\Images\\phuong-phap-giao-duc-con-cua-nguoi-do-thai-giup-tre-tu-tin-buoc-vao-cuoc-song.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\suc-manh-cua-eq.jpg",
-      "PackagePath": "staticwebassets\\Images\\suc-manh-cua-eq.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\toan-12-tap-1-chan-troi.jpg",
-      "PackagePath": "staticwebassets\\Images\\toan-12-tap-1-chan-troi.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\toan-12-tap-2-chan-troi.jpg",
-      "PackagePath": "staticwebassets\\Images\\toan-12-tap-2-chan-troi.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\tu-duy-nguoc.jpg",
-      "PackagePath": "staticwebassets\\Images\\tu-duy-nguoc.jpg"
-    },
-    {
-      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\Images\\yeu-nhung-dieu-khong-hoan-hao.jpg",
-      "PackagePath": "staticwebassets\\Images\\yeu-nhung-dieu-khong-hoan-hao.jpg"
-    },
-    {
       "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\ai-trong-linh-vuc-kinh-te-va-tai-chinh.jpg",
+      "PackagePath": "staticwebassets\\images\\ai-trong-linh-vuc-kinh-te-va-tai-chinh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\avatar1.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\avatars\\avatar1.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\avatar1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\avatars\\avatar2.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\avatar2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\avatars\\default.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\default.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\bai-ca-solomon.jpg",
+      "PackagePath": "staticwebassets\\images\\bai-ca-solomon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\bi-quyet-kinh-doanh-thue-va-cho-thue-nha-tap-2-hanh-trinh-tu-ly-thuyet-toi-thuc-tien.jpg",
+      "PackagePath": "staticwebassets\\images\\bi-quyet-kinh-doanh-thue-va-cho-thue-nha-tap-2-hanh-trinh-tu-ly-thuyet-toi-thuc-tien.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\chien-luoc-dau-tu-vang-sinh-loi.jpg",
+      "PackagePath": "staticwebassets\\images\\chien-luoc-dau-tu-vang-sinh-loi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\con-duong-chang-may-ai-di.jpg",
+      "PackagePath": "staticwebassets\\images\\con-duong-chang-may-ai-di.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\cuoc-doi-cua-pi.jpg",
+      "PackagePath": "staticwebassets\\images\\cuoc-doi-cua-pi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\dac-nhan-tam.jpg",
+      "PackagePath": "staticwebassets\\images\\dac-nhan-tam.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\dao-cua-vat-ly.jpg",
+      "PackagePath": "staticwebassets\\images\\dao-cua-vat-ly.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\doi-thu-sieu-pham.jpg",
+      "PackagePath": "staticwebassets\\images\\doi-thu-sieu-pham.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\hai-van-dam-duoi-bien.jpg",
+      "PackagePath": "staticwebassets\\images\\hai-van-dam-duoi-bien.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\luoc-su-thoi-gian.jpg",
+      "PackagePath": "staticwebassets\\images\\luoc-su-thoi-gian.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\ly-thuyet-tro-choi.jpg",
+      "PackagePath": "staticwebassets\\images\\ly-thuyet-tro-choi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\marketing-tinh-gon-lean-marketing-loi-nhuan-nhieu-hon-quang-cao-it-hon.jpg",
+      "PackagePath": "staticwebassets\\images\\marketing-tinh-gon-lean-marketing-loi-nhuan-nhieu-hon-quang-cao-it-hon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\mua-do.jpg",
+      "PackagePath": "staticwebassets\\images\\mua-do.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\ngu-van-12-tap-1-chan-troi.jpg",
+      "PackagePath": "staticwebassets\\images\\ngu-van-12-tap-1-chan-troi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\ngu-van-12-tap-2-chan-troi.jpg",
+      "PackagePath": "staticwebassets\\images\\ngu-van-12-tap-2-chan-troi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\nha-gia-kim.jpg",
+      "PackagePath": "staticwebassets\\images\\nha-gia-kim.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\nuoi-day-em-be-co-chinh-kien.jpg",
+      "PackagePath": "staticwebassets\\images\\nuoi-day-em-be-co-chinh-kien.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\phuong-phap-giao-duc-con-cua-nguoi-do-thai-giup-tre-tu-tin-buoc-vao-cuoc-song.jpg",
+      "PackagePath": "staticwebassets\\images\\phuong-phap-giao-duc-con-cua-nguoi-do-thai-giup-tre-tu-tin-buoc-vao-cuoc-song.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\slideshow\\banner1.jpg",
+      "PackagePath": "staticwebassets\\images\\slideshow\\banner1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\slideshow\\banner2.jpg",
+      "PackagePath": "staticwebassets\\images\\slideshow\\banner2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\suc-manh-cua-eq.jpg",
+      "PackagePath": "staticwebassets\\images\\suc-manh-cua-eq.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\tieng-goi-chan-troi.jpg",
+      "PackagePath": "staticwebassets\\images\\tieng-goi-chan-troi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\toan-12-tap-1-chan-troi.jpg",
+      "PackagePath": "staticwebassets\\images\\toan-12-tap-1-chan-troi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\toan-12-tap-2-chan-troi.jpg",
+      "PackagePath": "staticwebassets\\images\\toan-12-tap-2-chan-troi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\truyen-co-grimm.jpg",
+      "PackagePath": "staticwebassets\\images\\truyen-co-grimm.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\tu-duy-nguoc.jpg",
+      "PackagePath": "staticwebassets\\images\\tu-duy-nguoc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\tu-than_ren-tam_luyen-tri.jpg",
+      "PackagePath": "staticwebassets\\images\\tu-than_ren-tam_luyen-tri.jpg"
+    },
+    {
+      "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\images\\yeu-nhung-dieu-khong-hoan-hao.jpg",
+      "PackagePath": "staticwebassets\\images\\yeu-nhung-dieu-khong-hoan-hao.jpg"
     },
     {
       "Id": "C:\\Users\\phaml\\source\\repos\\NhaSachTriThuc\\NhaSachTriThuc\\wwwroot\\js\\site.js",

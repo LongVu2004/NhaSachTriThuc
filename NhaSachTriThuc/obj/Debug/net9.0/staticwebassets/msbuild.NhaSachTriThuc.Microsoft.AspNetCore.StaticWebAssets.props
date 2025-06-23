@@ -36,12 +36,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\ai-trong-linh-vuc-kinh-te-va-tai-chinh.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ai-trong-linh-vuc-kinh-te-va-tai-chinh.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/ai-trong-linh-vuc-kinh-te-va-tai-chinh.jpg</RelativePath>
+      <RelativePath>images/ai-trong-linh-vuc-kinh-te-va-tai-chinh.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -52,14 +52,86 @@
       <Integrity>WYs7Bh44k56O+8QwwWVJzlIRmTpa0buBMiuph/XymtI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\ai-trong-linh-vuc-kinh-te-va-tai-chinh.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ai-trong-linh-vuc-kinh-te-va-tai-chinh.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\bai-ca-solomon.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\avatar1.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/bai-ca-solomon.jpg</RelativePath>
+      <RelativePath>images/avatar1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>gf4coakhlr</Fingerprint>
+      <Integrity>bKFqSdBDpY1nrr9uL7aVimELqZnOK1aSkBf8DEbDatg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\avatar1.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\avatars\avatar1.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/avatars/avatar1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>gf4coakhlr</Fingerprint>
+      <Integrity>bKFqSdBDpY1nrr9uL7aVimELqZnOK1aSkBf8DEbDatg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\avatars\avatar1.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\avatars\avatar2.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/avatars/avatar2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>yyz1qpmkmn</Fingerprint>
+      <Integrity>Wirwxpz7shJV5gx2LR+PxnZshAdH8z32HATwwHs69C4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\avatars\avatar2.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\avatars\default.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/avatars/default.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x7g5gthntj</Fingerprint>
+      <Integrity>o6o8qSSangzMbuprwfjLl3yLA3ZN2qEVH+Y/hFAa68o=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\avatars\default.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\bai-ca-solomon.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/bai-ca-solomon.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -70,14 +142,14 @@
       <Integrity>gkYmrFpje8VxesNQrVt/tz8L7QDRlBF4HoyUIRl/W0c=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\bai-ca-solomon.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\bai-ca-solomon.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\bi-quyet-kinh-doanh-thue-va-cho-thue-nha-tap-2-hanh-trinh-tu-ly-thuyet-toi-thuc-tien.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\bi-quyet-kinh-doanh-thue-va-cho-thue-nha-tap-2-hanh-trinh-tu-ly-thuyet-toi-thuc-tien.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/bi-quyet-kinh-doanh-thue-va-cho-thue-nha-tap-2-hanh-trinh-tu-ly-thuyet-toi-thuc-tien.jpg</RelativePath>
+      <RelativePath>images/bi-quyet-kinh-doanh-thue-va-cho-thue-nha-tap-2-hanh-trinh-tu-ly-thuyet-toi-thuc-tien.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -88,14 +160,14 @@
       <Integrity>WVKR2SCbRBb8Rw7jMcJs8AoTC7m29oETxXgrm/RsXlY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\bi-quyet-kinh-doanh-thue-va-cho-thue-nha-tap-2-hanh-trinh-tu-ly-thuyet-toi-thuc-tien.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\bi-quyet-kinh-doanh-thue-va-cho-thue-nha-tap-2-hanh-trinh-tu-ly-thuyet-toi-thuc-tien.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\chien-luoc-dau-tu-vang-sinh-loi.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\chien-luoc-dau-tu-vang-sinh-loi.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/chien-luoc-dau-tu-vang-sinh-loi.jpg</RelativePath>
+      <RelativePath>images/chien-luoc-dau-tu-vang-sinh-loi.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -106,14 +178,14 @@
       <Integrity>S4VSljA4GjBOSAULjpUgm3eXLsIEMx99Iz3qgmx0+CU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\chien-luoc-dau-tu-vang-sinh-loi.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\chien-luoc-dau-tu-vang-sinh-loi.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\con-duong-chang-may-ai-di.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\con-duong-chang-may-ai-di.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/con-duong-chang-may-ai-di.jpg</RelativePath>
+      <RelativePath>images/con-duong-chang-may-ai-di.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -124,14 +196,14 @@
       <Integrity>BAPgRhzBUoBYtlW4MKRQXpUiGRwrrgwTMqTniWfEO5s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\con-duong-chang-may-ai-di.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\con-duong-chang-may-ai-di.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\cuoc-doi-cua-pi.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cuoc-doi-cua-pi.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/cuoc-doi-cua-pi.jpg</RelativePath>
+      <RelativePath>images/cuoc-doi-cua-pi.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -142,14 +214,50 @@
       <Integrity>RmwNdR3Kbrn7Y7yt46GNDZxo5KfsiLgAFLYyRoCEP38=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\cuoc-doi-cua-pi.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cuoc-doi-cua-pi.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\doi-thu-sieu-pham.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dac-nhan-tam.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/doi-thu-sieu-pham.jpg</RelativePath>
+      <RelativePath>images/dac-nhan-tam.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>yuwtes021v</Fingerprint>
+      <Integrity>ZnZwu/5rkFfvm7JIfeJ2Bikmg3VOTBVVyHXLljKmTeQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dac-nhan-tam.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dao-cua-vat-ly.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/dao-cua-vat-ly.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>13le342fyb</Fingerprint>
+      <Integrity>w0qsuJc7Q6e20b2y/XIFmNIjcNgco94QsMjus7//DYw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dao-cua-vat-ly.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\doi-thu-sieu-pham.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/doi-thu-sieu-pham.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -160,14 +268,68 @@
       <Integrity>7bVI+DtN2RfK4wCaXgkT+woLZcnqeAvv7KDr0CvQSRI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\doi-thu-sieu-pham.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\doi-thu-sieu-pham.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\marketing-tinh-gon-lean-marketing-loi-nhuan-nhieu-hon-quang-cao-it-hon.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\hai-van-dam-duoi-bien.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/marketing-tinh-gon-lean-marketing-loi-nhuan-nhieu-hon-quang-cao-it-hon.jpg</RelativePath>
+      <RelativePath>images/hai-van-dam-duoi-bien.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>y5ixxy1xe5</Fingerprint>
+      <Integrity>NrPmzWLiDvQI1P7cVMmtP6t0hEFZkks5+5olWcW4XI4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\hai-van-dam-duoi-bien.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\luoc-su-thoi-gian.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/luoc-su-thoi-gian.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>32n635g3dl</Fingerprint>
+      <Integrity>xW4siyzSBNCtzfGZ+oiFz1UkDArD/K1WeQa1Jc92hvk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\luoc-su-thoi-gian.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ly-thuyet-tro-choi.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/ly-thuyet-tro-choi.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6z39bvhhq9</Fingerprint>
+      <Integrity>nmyVZwl5JYH8HwhOVOrLqW6OxvpPhszOasHieQ+2Nas=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ly-thuyet-tro-choi.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\marketing-tinh-gon-lean-marketing-loi-nhuan-nhieu-hon-quang-cao-it-hon.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/marketing-tinh-gon-lean-marketing-loi-nhuan-nhieu-hon-quang-cao-it-hon.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -178,14 +340,14 @@
       <Integrity>MyliPRuqP6fmOxrwmnAMkEmLIQ6UXdW4rLf8KBMbPFM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\marketing-tinh-gon-lean-marketing-loi-nhuan-nhieu-hon-quang-cao-it-hon.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\marketing-tinh-gon-lean-marketing-loi-nhuan-nhieu-hon-quang-cao-it-hon.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\mua-do.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\mua-do.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/mua-do.jpg</RelativePath>
+      <RelativePath>images/mua-do.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -196,14 +358,14 @@
       <Integrity>tGxm8H0Bq0VOoY5liF1olOGHCgarUsQN3G3//xV+bEc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\mua-do.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\mua-do.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\ngu-van-12-tap-1-chan-troi.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ngu-van-12-tap-1-chan-troi.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/ngu-van-12-tap-1-chan-troi.jpg</RelativePath>
+      <RelativePath>images/ngu-van-12-tap-1-chan-troi.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -214,14 +376,14 @@
       <Integrity>VeAXaML5jX0loG31+wlvTyoUUbHXbg5WaF+fe9Dm8PU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\ngu-van-12-tap-1-chan-troi.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ngu-van-12-tap-1-chan-troi.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\ngu-van-12-tap-2-chan-troi.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ngu-van-12-tap-2-chan-troi.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/ngu-van-12-tap-2-chan-troi.jpg</RelativePath>
+      <RelativePath>images/ngu-van-12-tap-2-chan-troi.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -232,14 +394,32 @@
       <Integrity>W0i4xV7BAymUbbKnc3JmLQ0DB03Btr2Rr+Gm35j5MJ0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\ngu-van-12-tap-2-chan-troi.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ngu-van-12-tap-2-chan-troi.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\nuoi-day-em-be-co-chinh-kien.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nha-gia-kim.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/nuoi-day-em-be-co-chinh-kien.jpg</RelativePath>
+      <RelativePath>images/nha-gia-kim.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>2rp2usrh9a</Fingerprint>
+      <Integrity>IlPpeS0LT2GCLbh2GYTwDCKqxfmONYDmO/9BJFieSYQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nha-gia-kim.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nuoi-day-em-be-co-chinh-kien.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/nuoi-day-em-be-co-chinh-kien.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -250,14 +430,14 @@
       <Integrity>Wr26SX9simr/5+NR9mpQtKNKSKj2dkbB5LUztb4QGUA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\nuoi-day-em-be-co-chinh-kien.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\nuoi-day-em-be-co-chinh-kien.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\phuong-phap-giao-duc-con-cua-nguoi-do-thai-giup-tre-tu-tin-buoc-vao-cuoc-song.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\phuong-phap-giao-duc-con-cua-nguoi-do-thai-giup-tre-tu-tin-buoc-vao-cuoc-song.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/phuong-phap-giao-duc-con-cua-nguoi-do-thai-giup-tre-tu-tin-buoc-vao-cuoc-song.jpg</RelativePath>
+      <RelativePath>images/phuong-phap-giao-duc-con-cua-nguoi-do-thai-giup-tre-tu-tin-buoc-vao-cuoc-song.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -268,14 +448,50 @@
       <Integrity>8lnVr19aYC6vokv56pxzwwyX0Yrff5eE3Ujd8H39SNU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\phuong-phap-giao-duc-con-cua-nguoi-do-thai-giup-tre-tu-tin-buoc-vao-cuoc-song.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\phuong-phap-giao-duc-con-cua-nguoi-do-thai-giup-tre-tu-tin-buoc-vao-cuoc-song.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\suc-manh-cua-eq.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\slideshow\banner1.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/suc-manh-cua-eq.jpg</RelativePath>
+      <RelativePath>images/slideshow/banner1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>h8lm1zo7ps</Fingerprint>
+      <Integrity>/537iCJtSxKbgJzxWy/nh1sM5d3EEy3DEzyl6+w8N/c=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\slideshow\banner1.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\slideshow\banner2.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/slideshow/banner2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hiah6z3uvp</Fingerprint>
+      <Integrity>h87JpQJe+m215hIepBVs/zYR4uNUHqP5EIGRNhA1kYI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\slideshow\banner2.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\suc-manh-cua-eq.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/suc-manh-cua-eq.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -286,14 +502,32 @@
       <Integrity>9HVbJ0GZRXgGyFBfjXVhc/XcmeJ2kyTsi3kvBcXBs1Y=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\suc-manh-cua-eq.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\suc-manh-cua-eq.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\toan-12-tap-1-chan-troi.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\tieng-goi-chan-troi.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/toan-12-tap-1-chan-troi.jpg</RelativePath>
+      <RelativePath>images/tieng-goi-chan-troi.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qvoj4q9tr9</Fingerprint>
+      <Integrity>Sv8SO2pw+3LtpJuv8+f85BE2rno/y+lXGPKGdTBNbfM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\tieng-goi-chan-troi.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\toan-12-tap-1-chan-troi.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/toan-12-tap-1-chan-troi.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -304,14 +538,14 @@
       <Integrity>Jyc2MbjjTp6dd+J+fw0K1rjQfYQrG4elmbPiTAP3I1c=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\toan-12-tap-1-chan-troi.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\toan-12-tap-1-chan-troi.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\toan-12-tap-2-chan-troi.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\toan-12-tap-2-chan-troi.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/toan-12-tap-2-chan-troi.jpg</RelativePath>
+      <RelativePath>images/toan-12-tap-2-chan-troi.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -322,14 +556,32 @@
       <Integrity>fHfB1Q3DFjvLD9ds28yqQIBxmP0fBD41jslul0WkYrE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\toan-12-tap-2-chan-troi.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\toan-12-tap-2-chan-troi.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\tu-duy-nguoc.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\truyen-co-grimm.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/tu-duy-nguoc.jpg</RelativePath>
+      <RelativePath>images/truyen-co-grimm.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>2ynqbhnhhs</Fingerprint>
+      <Integrity>unqPc7ovW8xLe9WHW0lA4+98i+nxfIb/RgLbXiQxt3o=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\truyen-co-grimm.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\tu-duy-nguoc.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/tu-duy-nguoc.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -340,14 +592,32 @@
       <Integrity>5dTfI8bgfT1ntKqy9mt+wcV0qBYr/Sh5aSqQ/CA80NI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\tu-duy-nguoc.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\tu-duy-nguoc.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\yeu-nhung-dieu-khong-hoan-hao.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\tu-than_ren-tam_luyen-tri.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>NhaSachTriThuc</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/NhaSachTriThuc</BasePath>
-      <RelativePath>Images/yeu-nhung-dieu-khong-hoan-hao.jpg</RelativePath>
+      <RelativePath>images/tu-than_ren-tam_luyen-tri.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>11gfrq7qxb</Fingerprint>
+      <Integrity>5ZHsgRJbWpBTu/KxVM72oPafoouOkQXGjkK5hu0G+5g=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\tu-than_ren-tam_luyen-tri.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\yeu-nhung-dieu-khong-hoan-hao.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NhaSachTriThuc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NhaSachTriThuc</BasePath>
+      <RelativePath>images/yeu-nhung-dieu-khong-hoan-hao.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -358,7 +628,7 @@
       <Integrity>4i5wVMW5lRKRzweIb7zS2ki6iUoFJwO2sjXShnTtXIo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\yeu-nhung-dieu-khong-hoan-hao.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\yeu-nhung-dieu-khong-hoan-hao.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))">
       <SourceType>Package</SourceType>

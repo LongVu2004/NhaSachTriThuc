@@ -1,0 +1,20 @@
+﻿@model NhaSachTriThuc.Models.Category
+
+@{
+    ViewData["Title"] = "Xoá thể loại";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Bạn có chắc chắn muốn xoá thể loại này không?</h4>
+
+<div>
+    <strong>Tên:</strong> @Model.Name <br />
+</div>
+
+<form asp-action="DeleteConfirmed">
+    <input type="hidden" asp-for="CategoryId" />
+    <br />
+    <button type="submit" class="btn btn-danger">Xoá</button>
+    <a asp-action="Index" class="btn btn-secondary">Huỷ</a>
+</form>

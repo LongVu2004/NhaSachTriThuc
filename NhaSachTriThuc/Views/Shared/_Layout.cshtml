@@ -13,6 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <style>
         /* General Styles */
@@ -368,13 +369,15 @@
                                 <i class="bi bi-person-fill"></i> @Context.Session.GetString("UserName")
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="userDropdown">
-                                <li><a class="dropdown-item" href="/Account/Profile">Hồ sơ</a></li>
-                                <li><a class="dropdown-item" href="/Account/Orders">Đơn hàng</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Edit", "Profile")">Hồ sơ</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("History", "Order")">Lịch sử đơn hàng</a></li>
+                                @* <li><a asp-controller="Order" asp-action="History" class="nav-link">Lịch sử đơn hàng</a></li> *@
                                 <li><hr class="dropdown-divider" /></li>
                                 <li>
-                                    <form id="logoutForm" asp-area="Identity" asp-page="/Account/Logout" method="post" class="dropdown-item p-0 m-0">
-                                        <button type="submit" class="btn w-100 text-start text-black">Đăng xuất</button>
+                                    <form method="post" asp-area="Identity" asp-page="/Account/Logout" id="logoutForm">
+                                        <button type="submit" class="dropdown-item">Đăng xuất</button>
                                     </form>
+
                                 </li>
                             </ul>
                         }
@@ -414,7 +417,9 @@
                     @if (User.IsInRole("Admin"))
                     {
                         <li class="nav-item">
-                            <a class="nav-link" href="/Admin/Index"><i class="bi bi-speedometer2"></i> Quản trị</a>
+                            <a class="nav-link" asp-area="Areas" asp-controller="Admin" asp-action="Index">
+                                <i class="bi bi-speedometer2"></i> Quản trị
+                            </a>
                         </li>
                     }
                 </ul>
@@ -457,10 +462,10 @@
                 <div class="col-md-3 col-sm-6">
                     <h5>Kết nối với chúng tôi</h5>
                     <div class="social-links">
-                        <a href="https://facebook.com/nhasachtrithuc" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="https://twitter.com/nhasachtrithuc" target="_blank" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="https://instagram.com/nhasachtrithuc" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="https://linkedin.com/company/nhasachtrithuc" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://facebook.com/fahasa" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://youtube.com/channel/UCUZcVOLSxK1q6RfgzQ9-HYQ" target="_blank" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+                        <a href="https://instagram.com/fahasa_official" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://linkedin.com/company/fahasa-com" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -473,9 +478,14 @@
     <a href="#" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@3.2.12/dist/jquery.validate.unobtrusive.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     @RenderSection("Scripts", required: false)
 
@@ -542,6 +552,21 @@
                     const dropdown = document.getElementById("categoryList");
                     dropdown.innerHTML = '<li><span class="dropdown-item text-danger">Không thể tải danh mục</span></li>';
                 });
+        });
+
+        $(function () {
+            $("input[name='query']").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: '/Product/GetSuggestions',
+                        data: { term: request.term },
+                        success: function (data) {
+                            response(data);
+                        }
+                    });
+                },
+                minLength: 2
+            });
         });
 
         toastr.options = {
